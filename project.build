@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project name="CodeSoda.Impression" default="all">
+
+	<include buildfile="utility.build" />
+
+	<property name="debug" value="false" />
+	<property name="framework.version" value="v2.0.50727" />
+	<property name="svn.exe" value="..\tools\svn\svn.exe" />
+	<property name="Assembly.Version" value="1.20.2" />
+
+	<property name="nant.settings.currentframework" value="net-3.5" />
+
+	<target name="compile" depends="init, versioninfo" descriptions="builds the impression dll">
+		<resgen todir="build\" >
+			<resources>
+				<include name="src\app\**\*.resx" />
+			</resources>
+		</resgen>
+
+		<csc target="library" output="build\${project::get-name()}.dll" debug="${debug}" >
+			<sources>
+				<include name="build\SolutionVersionInfo.cs" />
+				<include name="src\SolutionInfo.cs" />
+				<include name="src\app\**\*.cs" />
+				<!-- exclude name="src\migrate\**\AssemblyInfo.cs" / -->
+			</sources>
+			<resources dynamicprefix="false" prefix="CodeSoda.Impression.Properties">
+				<include name="build\*.resources" />
+			</resources>
+			<references>
+				<include name="lib\CodeSoda.IOC.dll" />
+			</references>
+		</csc>
+
+	</target>
+
+</project>

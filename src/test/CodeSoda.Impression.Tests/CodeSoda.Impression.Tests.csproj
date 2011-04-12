@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D1FFF8B-5129-4A7C-9DE4-9B9DBE57F931}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeSoda.Impression.Tests</RootNamespace>
+    <AssemblyName>CodeSoda.Impression.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\..\..\..\CodeSoda.Impression\lib\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.0.8258, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="VarTagTests.cs" />
+    <Compile Include="ExpressionMarkupTests.cs" />
+    <Compile Include="ExtendsTests.cs" />
+    <Compile Include="Filters\PagerTests.cs" />
+    <Compile Include="Filters\PagedTests.cs" />
+    <Compile Include="Filters\EmptyFalseTests.cs" />
+    <Compile Include="Filters\CountTests.cs" />
+    <Compile Include="Filters\DefaultValueTests.cs" />
+    <Compile Include="Filters\DateTests.cs" />
+    <Compile Include="Filters\HtmlFilters.cs" />
+    <Compile Include="Filters\IFTests.cs" />
+    <Compile Include="Filters\MoneyTests.cs" />
+    <Compile Include="Filters\PickTests.cs" />
+    <Compile Include="Filters\RandomTests.cs" />
+    <Compile Include="Filters\ShuffleTests.cs" />
+    <Compile Include="Filters\StripTests.cs" />
+    <Compile Include="Filters\TrimTests.cs" />
+    <Compile Include="Filters\UrlEncodeTests.cs" />
+    <Compile Include="Filters\_FilterTestBase.cs" />
+    <Compile Include="_TestObjects.cs" />
+    <Compile Include="ForEachTagTests.cs" />
+    <Compile Include="HashTemplateCacheTests.cs" />
+    <Compile Include="ImpressionCachingComparisonTests.cs" />
+    <Compile Include="Integration\Filters\CountTests.cs" />
+    <Compile Include="Integration\Filters\DateTests.cs" />
+    <Compile Include="Integration\Filters\DefaultValueTests.cs" />
+    <Compile Include="Integration\IntegrationTestBase.cs" />
+    <Compile Include="ReflectorInheritedModelTests.cs" />
+    <Compile Include="ReflectorTests.cs" />
+    <Compile Include="EasyTextTests.cs" />
+    <Compile Include="ImpressionTests.cs" />
+    <Compile Include="SpikeTests.cs" />
+    <Compile Include="TagParserTests.cs" />
+    <Compile Include="TemplateParserTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="templates\BadlyFormed.htm" />
+    <Content Include="templates\extends-content.htm" />
+    <Content Include="templates\extends-layout.htm" />
+    <Content Include="templates\hbmx\account-box.include.html" />
+    <Content Include="templates\hbmx\account.template.html" />
+    <Content Include="templates\hbmx\cart.template.html" />
+    <Content Include="templates\hbmx\checkoutprocess.template.html" />
+    <Content Include="templates\hbmx\contact.template.html" />
+    <Content Include="templates\hbmx\custompage.template.html" />
+    <Content Include="templates\hbmx\EmailCustomerContact.template.html" />
+    <Content Include="templates\hbmx\EmailCustomerForgotPassword.template.html" />
+    <Content Include="templates\hbmx\EmailCustomerJoin.template.html" />
+    <Content Include="templates\hbmx\EmailCustomerNewOrder.template.html" />
+    <Content Include="templates\hbmx\EmailCustomerOrderUpdated.template.html" />
+    <Content Include="templates\hbmx\EmailStoreContact.template.html" />
+    <Content Include="templates\hbmx\EmailStoreNewOrder.template.html" />
+    <Content Include="templates\hbmx\master-layout.html" />
+    <Content Include="templates\hbmx\news.template.html" />
+    <Content Include="templates\hbmx\offline.template.html" />
+    <Content Include="templates\hbmx\order.template.html" />
+    <Content Include="templates\hbmx\orderlist.template.html" />
+    <Content Include="templates\hbmx\pagemessage.template.html" />
+    <Content Include="templates\hbmx\payment.template.html" />
+    <Content Include="templates\hbmx\product-list-featured.include.html" />
+    <Content Include="templates\hbmx\product.template.html" />
+    <Content Include="templates\hbmx\productlist-category.template.html" />
+    <Content Include="templates\hbmx\storefront-layout.html" />
+    <Content Include="templates\hbmx\storefront.template.html" />
+    <Content Include="templates\hbmx\yourinfo.template.html" />
+    <Content Include="templates\SimpleIfElseIfElseEndIf.htm" />
+    <Content Include="templates\lineNumberCharPos.htm" />
+    <Content Include="templates\SimpleIfEndIfFalse.htm" />
+    <Content Include="templates\SimpleSSIContent.htm" />
+    <Content Include="templates\SimpleSSI.htm" />
+    <Content Include="templates\SimpleIfElseEndIf.htm" />
+    <Content Include="templates\SimpleIfEndIfTrue.htm" />
+    <Content Include="templates\empty.htm" />
+    <Content Include="templates\SimpleForEach.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\app\CodeSoda.Impression.csproj">
+      <Project>{C839576E-DFE7-4719-B1F4-D5000C76F56C}</Project>
+      <Name>CodeSoda.Impression</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

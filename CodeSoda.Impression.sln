@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37D54597-C895-4FD4-8C16-5E498C649FFA}"
+	ProjectSection(SolutionItems) = preProject
+		project.build = project.build
+		regex.xso = regex.xso
+		src\SolutionInfo.cs = src\SolutionInfo.cs
+		src\SolutionVersion.cs = src\SolutionVersion.cs
+		utility.build = utility.build
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSoda.Impression", "src\app\CodeSoda.Impression.csproj", "{C839576E-DFE7-4719-B1F4-D5000C76F56C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSoda.Impression.LoadTests", "src\test\CodeSoda.Impression.LoadTests\CodeSoda.Impression.LoadTests.csproj", "{686CC5DD-F506-4C41-BB2D-C70E0126DA8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeSoda.Impression.Tests", "src\test\CodeSoda.Impression.Tests\CodeSoda.Impression.Tests.csproj", "{1D1FFF8B-5129-4A7C-9DE4-9B9DBE57F931}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C839576E-DFE7-4719-B1F4-D5000C76F56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C839576E-DFE7-4719-B1F4-D5000C76F56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C839576E-DFE7-4719-B1F4-D5000C76F56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C839576E-DFE7-4719-B1F4-D5000C76F56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{686CC5DD-F506-4C41-BB2D-C70E0126DA8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{686CC5DD-F506-4C41-BB2D-C70E0126DA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{686CC5DD-F506-4C41-BB2D-C70E0126DA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{686CC5DD-F506-4C41-BB2D-C70E0126DA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1FFF8B-5129-4A7C-9DE4-9B9DBE57F931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1FFF8B-5129-4A7C-9DE4-9B9DBE57F931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1FFF8B-5129-4A7C-9DE4-9B9DBE57F931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1FFF8B-5129-4A7C-9DE4-9B9DBE57F931}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
